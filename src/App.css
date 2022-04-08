@@ -21,7 +21,7 @@ body::after {
   display: block;
   position: absolute;
   background-image: url(../public/images/background/background-elements.webp);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: left -300px top -230px;
   top: 0;
   left: 0;
