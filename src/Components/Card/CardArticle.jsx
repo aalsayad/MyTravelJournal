@@ -17,13 +17,20 @@ function CardArticle({
     AOS.init();
     AOS.refresh();
   }, []);
-  // `./images/${img}`
+
+  // const [mobile, setMobile] = useState(false);
+  // let updatedDescription;
+  // let descriptionLimit = 150;
+  // if (description.length > descriptionLimit) {
+  //   updatedDescription = `${description.slice(0, descriptionLimit)}...`;
+  // }
+
   return (
     <article
       className="card"
       data-aos-duration="300"
       data-aos="fade-right"
-      data-aos-offset="300"
+      data-aos-offset="0"
       data-aos-easing="ease-out"
     >
       <div className="card-cover">

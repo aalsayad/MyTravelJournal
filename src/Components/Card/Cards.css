@@ -9,6 +9,7 @@
   border-radius: 10px;
   overflow: hidden;
   display: flex;
+  /* min-height: 400px; */
   max-width: 450px;
 }
 
@@ -36,23 +37,32 @@
 
 .card-content {
   margin: 2rem;
-  position: relative;
 }
 
+/*Card image cover*/
 .card-cover {
+  min-width: 130px;
+  max-width: 130px;
+  height: 100%;
   overflow: hidden;
-  min-width: 180px;
 }
 
 .cover__img {
-  height: 370px;
-  width: 180px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 .card:hover .cover__img {
   transform: scale(1.02);
   transition: all 0.4s ease-in;
+}
+
+@media screen and (min-width: 800px) {
+  .card-cover {
+    min-width: 210px;
+    max-width: 210px;
+  }
 }
 
 .card-header h2 {
@@ -93,9 +103,12 @@
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 1.2;
+  padding-bottom: 3rem;
 }
 
 .card-cta {
+  padding: 1rem;
+
   margin-right: 1rem;
   display: flex;
   align-items: center;
