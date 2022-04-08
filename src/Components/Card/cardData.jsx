@@ -35,4 +35,16 @@ export default [
       "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings.",
     maps: "https://www.google.com/maps/d/u/0/embed?mid=1NYBTZlF3StQEf65_sVbpMlskCoo&ie=UTF8&hl=en&msa=0&ll=-33.862148%2C151.21521899999996&spn=0.035636%2C0.042915&z=14&output=embed",
   },
+  {
+    title: "BALI",
+    country: "Indonesia",
+    img: "https://images.unsplash.com/photo-1616484173745-07f25fd0547f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
+    date: {
+      start: "1 DEC, 2021",
+      end: "8 DEC, 2021",
+    },
+    description:
+      " A magical blend of culture, people, nature, activities, weather, culinary delights, nightlife, and beautiful accommodation. Bali is rated as one of the best travel destinations in the world by countless websites, review portals, and travel magazines each year – for very good reasons.",
+    maps: "https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=en&msa=0&ll=-8.447921999999986%2C115.180664&spn=1.230683%2C2.469177&z=9&mid=1YV1arpIjsDriWShdWU4cOmwh4GA",
+  },
 ];

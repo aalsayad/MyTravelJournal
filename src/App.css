@@ -35,3 +35,18 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/*ScrollBar*/
+::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0000005c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bded94d0;
+  border-radius: 2rem;
+}

@@ -17,7 +17,7 @@ function CardArticle({
     AOS.init();
     AOS.refresh();
   }, []);
-
+  // `./images/${img}`
   return (
     <article
       className="card"
@@ -27,7 +27,7 @@ function CardArticle({
       data-aos-easing="ease-out"
     >
       <div className="card-cover">
-        <img className="cover__img" src={`./images/${img}`} />
+        <img className="cover__img" src={img.includes("http") ? img : `./images/${img}`} />
       </div>
       <div className="card-content">
         <header className="card-header">

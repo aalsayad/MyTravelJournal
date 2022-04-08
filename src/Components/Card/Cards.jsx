@@ -8,7 +8,7 @@ function Cards() {
     return <CardArticle items={entry} />;
   });
 
-  return <>{mappedCard}</>;
+  return <div className="container grid">{mappedCard}</div>;
 }
 
 export default Cards;
