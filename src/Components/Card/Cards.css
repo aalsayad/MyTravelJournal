@@ -1,0 +1,136 @@
+.card {
+  margin: 5rem 8%;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+    180deg,
+    rgba(50, 66, 70, 0.6) 0%,
+    rgba(72, 91, 97, 0.33) 47.4%,
+    rgba(50, 66, 70, 0.35) 100%
+  );
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  max-height: 350px;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    252.51deg,
+    rgba(65, 92, 60, 0.6) 8.93%,
+    rgba(65, 96, 77, 0.33) 46.91%,
+    rgba(52, 70, 50, 0.35) 89.05%
+  );
+  z-index: -1;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+
+.card:hover::before {
+  opacity: 0.7;
+}
+
+.card-content {
+  margin: 2rem;
+  position: relative;
+}
+
+.card-cover {
+  overflow: hidden;
+  max-width: 43%;
+  max-height: 100%;
+}
+
+.cover__img {
+  height: 110%;
+  position: relative;
+  right: 20px;
+}
+
+.card:hover .cover__img {
+  transform: scale(1.02);
+  transition: all 0.4s ease-in;
+}
+
+.card-header h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.location__icon {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 3px;
+}
+.card-header p {
+  font-size: 1.5rem;
+  color: #bded94;
+  font-weight: 300;
+}
+
+.card-date {
+  margin-top: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.card-date::after {
+  content: "";
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #bded94;
+  display: block;
+  position: relative;
+  top: 0.8rem;
+}
+
+.card-body {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.card-cta {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  align-self: left;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.card-cta::after {
+  content: "➝";
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 0.8rem;
+  color: #bded94;
+  font-weight: bold;
+  font-style: normal;
+  transition: all 0.2s ease-out;
+}
+
+.card-cta:hover::after {
+  transform: translateX(5px);
+}
+.card-cta:hover {
+  color: #bded94;
+}
+
+.card-cta-anchor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

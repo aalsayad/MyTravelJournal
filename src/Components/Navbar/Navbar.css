@@ -1,0 +1,29 @@
+.navbar {
+  background: rgba(152, 180, 206, 0.08);
+  box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 2.5rem 5.5rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 3.2rem;
+  margin-right: 2rem;
+  transform: translateY(-3px);
+}
+
+.logo-text > h1 {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.logo-text > p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  opacity: 0.75;
+}
